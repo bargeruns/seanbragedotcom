@@ -1,0 +1,40 @@
+body {
+  padding-top: 65px;
+}
+.navbar-default {
+  background-color: #fda947;
+}
+.navbar-brand {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+  line-height: inherit;
+}
+.navbar-brand>.fa-chevron-right {
+  color: white;
+}
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
+.navbar-initials {
+  color: white;
+  font-size: 2em;
+}
+ul.nav.navbar-nav>li>a {
+  font-family: helvetica;
+  color: white;
+}
+ul.nav.navbar-nav>li>a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #fda947;
+}
+.heading {
+  color: #fda947;
+}
+.core-tech   {
+  display: inline;
+  font-size: 12px;
+}

@@ -2,10 +2,16 @@ var app = angular.module("seanBrageDotCom", ["ui.router"]);
 
 app.config(function($stateProvider,$urlRouterProvider) {
   $stateProvider
-    .state('index',{
-      url: "/home",
+    .state('portfolio',{
+      url: "/portfolio",
       templateUrl: "../partials/index.html",
       controller: "mainControl"
     })
-    $urlRouterProvider.otherwise('/home')
+    .state('resume',{
+      url: '/resume',
+      templateUrl: "../partials/resume.html",
+      controller: "resumeControl"
+    })
+    .state
+    $urlRouterProvider.otherwise('/portfolio')
 })

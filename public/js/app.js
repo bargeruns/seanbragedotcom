@@ -12,6 +12,11 @@ app.config(function($stateProvider,$urlRouterProvider) {
       templateUrl: "../partials/resume.html",
       controller: "resumeControl"
     })
+    .state('about',{
+      url: '/about',
+      templateUrl: "../partials/about.html",
+      controller: "aboutControl"
+    })
     .state
     $urlRouterProvider.otherwise('/portfolio')
 })

@@ -1,6 +1,11 @@
 body {
   padding-top: 65px;
 }
+@media (min-width: 700px) {
+.collapse {
+       display: none!important;
+   }
+}
 .navbar-default {
   background-color: #fda947;
 }

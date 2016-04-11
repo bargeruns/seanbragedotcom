@@ -10,4 +10,4 @@ seanbrage.com is a simple AngularJS front-end app showcasing my portfolio and re
 
 Get hacking!!!
 
-## [view the live page here](seanbrage.com)
+## [view the live page here](https://seanbrage.com)

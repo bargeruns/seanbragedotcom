@@ -2,6 +2,7 @@
   "name": "seanbragedotcom",
   "version": "2.0.0",
   "description": "Resume/demo site",
+  "start": "node SMB.js",
   "main": "SMB.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,6 +4,7 @@
   "description": "Resume/demo site",
   "main": "SMB.js",
   "scripts": {
+    "start": "node SMB.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

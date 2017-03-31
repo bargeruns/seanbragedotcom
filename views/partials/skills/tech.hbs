@@ -1,34 +1,21 @@
 <div class="box">
-    <p class="title">Tech Skills</p>
-    <p class="subtitle">Frameworks, Libraries + More</p>
-    <hr>
+  <p class="title">Tech Skills</p>
+  <p class="subtitle">Frameworks, Libraries + More</p>
+  <hr>
   <div class="columns content">
     <div class="column">
       <ul>
-        <li>Node</li>
-        <li>ExpressJS</li>
-        <li>React</li>
-        <li>Webpack</li>
-        <li>Sass</li>
-        <li>Bootstrap</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
+        {{#each skills.tech.column_1}}
+        <li>{{this}}</li>
+        {{/each}}
       </ul>
     </div>
     <div class="column">
       <ul>
-        <li>jQuery</li>
-        <li>AngularJS</li>
-        <li>Browserify</li>
-        <li>Gulp</li>
-        <li>Async.js</li>
-        <li>Lodash</li>
-        <li>Jade/Pug/Handlebars</li>
-        <li>Mocha/Chai</li>
-        <li>OSX</li>
+        {{#each skills.tech.column_2}}
+        <li>{{this}}</li>
+        {{/each}}
       </ul>
     </div>
   </div>
-  </div>
-
+</div>

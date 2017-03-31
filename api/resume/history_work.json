@@ -1,0 +1,29 @@
+[
+  {
+    "company": "Layer3 TV",
+    "title": "Web Development Engineer",
+    "time": "1 year",
+    "summary": "Front-to-back JavaScript development as a member of an Agile development team at a rapidly-growing cable TV startup.",
+    "work": [
+     "Back office service development with Node, Express + MongoDB.",
+     "Frontend development of both customer and employee-facing applications using everything from Jade + jQuery to AngularJS." 
+    ],
+    "accomplishments": [
+      "Rearchitected the legacy signup/marketing site as a single-page application with AngularJS, Gulp, Browserify, and Sass.",
+      "Deployed the company's first ReactJS project.",
+      "Wrote a command-line application in Node + ES2015 to import legacy Mongo records, create new records based on current schemas, and POST the new records to a backoffice API." 
+    ]
+  },
+  {
+    "company": "BNC Systems",
+    "title": "Network Engineer/Consultant",
+    "time": "1 year",
+    "summary": "IT support and consultation for small/medium business and enterprise clients.",
+    "work": [
+      "IT troubleshooting + support (PC and Mac).",
+      "Vendor management.",
+      "Network + workstation deployment.",
+      "Mobile device management (MDM)."
+    ]
+  }
+]

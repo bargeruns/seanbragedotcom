@@ -1,0 +1,24 @@
+<div class="content">
+  <p class="title is-4">{{company}}</p>
+  <p class="subtitle">{{title}} - {{time}}</p>
+  <ul>
+    <li>Summary:</li>
+    <ul>
+      <li>{{summary}}</li>
+    </ul>
+    <li>Daily Work:</li>
+    <ul>
+      {{#each work}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    {{#if accomplishments}}
+    <li>Noteworthy Accomplishments:</li>
+    <ul>
+      {{#each accomplishments}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    {{/if}}
+  </ul>
+</div>

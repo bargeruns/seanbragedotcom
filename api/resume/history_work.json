@@ -17,7 +17,8 @@
       {
         "name": "Justin Darner",
         "relation": "Team Lead + Mentor",
-        "email": "justin.darner@gmail.com"
+        "email": "justin.darner@gmail.com",
+        "summary": "Justin was my team lead and mentor at Layer3 TV. He and I worked together daily, and he was a key player in my growth as a junior dev."
       }
     ]
   },
@@ -37,7 +38,7 @@
         "name": "Arn Johnson",
         "relation": "Manager + Mentor",
         "email": "arn.johnson@icloud.com",
-        "phone": "+1 (303) 807-8743"
+        "summary": "Part mentor, part manager, part partner-in-crime, Arn and I were teamed up almost daily keeping our clients (and their technology) happy and healthy."
       }
     ]
   },
@@ -56,13 +57,13 @@
         "name": "Kimberly Grimshaw",
         "relation": "Store Leader",
         "email": "kgrimshaw@mac.com",
-        "phone": "+1 (303) 588-9803"
+        "summary": "My most senior manager for most of my tenure at Apple, Kimberly helped me grow from a part-time sales associate to a full-time professional trainer."
       },
       {
         "name": "Keith Harper",
         "relation": "Manager + Mentor",
         "email": "keithharper@mac.com",
-        "phone": "+1 (408) 896-9047"
+        "summary": "Keith is a god at providing customer support, growing direct reports, and making every workplace fun and welcoming. He helped me learn to do the same."
       }
     ]
   }

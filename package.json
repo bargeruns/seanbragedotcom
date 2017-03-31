@@ -1,0 +1,23 @@
+{
+  "name": "seanbragedotcom",
+  "version": "2.0.0",
+  "description": "Resume/demo site",
+  "main": "SMB.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bargeruns/seanbragedotcom.git"
+  },
+  "author": "Sean M Brage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bargeruns/seanbragedotcom/issues"
+  },
+  "homepage": "https://github.com/bargeruns/seanbragedotcom#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "hbs": "^4.0.1"
+  }
+}

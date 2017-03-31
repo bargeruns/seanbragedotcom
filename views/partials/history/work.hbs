@@ -1,0 +1,66 @@
+<div class="columns">
+  <div class="column">
+    <div class="box">
+      <p class="title">Work Experience</p>
+      <hr> {{#each history.jobs}}
+      <div class="content">
+        <p class="title is-4">{{company}}</p>
+        <p class="subtitle">{{title}} - {{time}}</p>
+        <ul>
+          <li>Summary:</li>
+          <ul>
+            <li>{{summary}}</li>
+          </ul>
+          <li>Daily Work:</li>
+          <ul>
+            {{#each work}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          {{#if accomplishments}}
+          <li>Noteworthy Accomplishments:</li>
+          <ul>
+            {{#each accomplishments}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </ul>
+        <p class="title is-5">Reference(s):</p>
+        {{#each references}}
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-5">{{name}}</p>
+              <p class="subtitle">{{relation}}</p>
+            </div>
+            <div class="card-footer">
+              {{#if phone}}
+              <div class="card-footer-item">
+                <a href="tel:{{phone}}">
+                  <span class="icon">
+                        <i class="fa fa-phone"></i>
+                      </span>
+                  <br> {{phone}}
+                </a>
+              </div>
+              {{/if}} {{#if email}}
+              <div class="card-footer-item">
+                <a href="mailto:{{email}}">
+                  <span class="icon">
+                    <i class="fa fa-envelope-o"></i>
+                  </span>
+                  {{email}}
+                </a>
+              </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <hr>
+      {{/each}}
+    </div>
+  </div>
+</div>

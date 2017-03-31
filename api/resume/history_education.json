@@ -1,0 +1,25 @@
+[
+  {
+    "school": "Galvanize",
+    "program": "Web Development Intensive (gSchool)",
+    "time": "6 month intensive",
+    "summary": "Immersive full-stack web development intensive. Extensive project-based education in HTML, CSS, JavaScript, Node, relational databases (Postgres), and single-page applications (AngularJS).",
+    "degrees": [
+      "Certificate of Completion"
+    ],
+    "references": [
+      {
+        "name": "Martha Berner",
+        "relation": "Instructor",
+        "phone": "(773) 954-5943",
+        "email": "martha@galvanize.com"
+      },
+      {
+        "name": "Nmuta Jones",
+        "relation": "Instructor",
+        "phone": "(720) 989-3872",
+        "email": "nmuta.jones@galvanize.com"
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "company": "Layer3 TV",
+    "title": "Web Development Engineer",
+    "time": "1 year",
+    "summary": "Front-to-back JavaScript development as a member of an Agile development team at a rapidly-growing cable TV startup.",
+    "work": [
+     "Back office service development with Node, Express + MongoDB.",
+     "Frontend development of both customer and employee-facing applications using everything from Jade + jQuery to AngularJS." 
+    ],
+    "accomplishments": [
+      "Rearchitected the legacy signup/marketing site as a single-page application with AngularJS, Gulp, Browserify, and Sass.",
+      "Deployed the company's first ReactJS project.",
+      "Wrote a command-line application in Node + ES2015 to import legacy Mongo records, create new records based on current schemas, and POST the new records to a backoffice API." 
+    ],
+    "references": [
+      {
+        "name": "Justin Darner",
+        "relation": "Team Lead + Mentor",
+        "email": "justin.darner@gmail.com"
+      }
+    ]
+  },
+  {
+    "company": "BNC Systems",
+    "title": "Network Engineer/Consultant",
+    "time": "1 year",
+    "summary": "IT support and consultation for small/medium business and enterprise clients.",
+    "work": [
+      "IT troubleshooting + support (PC and Mac).",
+      "Vendor management.",
+      "Network + workstation deployment.",
+      "Mobile device management (MDM)."
+    ],
+    "references": [
+      {
+        "name": "Arn Johnson",
+        "relation": "Manager + Mentor",
+        "email": "arn.johnson@icloud.com",
+        "phone": "+1 (303) 807-8743"
+      }
+    ]
+  },
+  {
+    "company": "Apple",
+    "title": "Creative",
+    "time": "5 years",
+    "summary": "Facilitated customer training and support on Apple products in an Apple Retail store location. Faciliated in-store training and mentoring of Apple employees.",
+    "work": [
+      "Sales + support of Apple products.",
+      "Delivery of group and one-on-one training sessions for Apple customers.",
+      "Training and development of new hires and employees promoted to new roles."
+    ],
+    "references": [
+      {
+        "name": "Kimberly Grimshaw",
+        "relation": "Store Leader",
+        "email": "kgrimshaw@mac.com",
+        "phone": "+1 (303) 588-9803"
+      },
+      {
+        "name": "Keith Harper",
+        "relation": "Manager + Mentor",
+        "email": "keithharper@mac.com",
+        "phone": "+1 (408) 896-9047"
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+<div class="container columns">
+  <div class="column">
+    <h2 class="title">HISTORY</h2>
+    <hr>
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-header">
+            <p class="card-header-title">Work</p>
+          </div>
+          <div class="card-content content">
+            {{> history/work}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        {{!--<div class="card">
+          <div class="card-header">
+            <p class="card-header-title">Projects</p>
+          </div>
+          <div class="card-content content">
+            {{> history/projects}}
+          </div>
+        </div>--}}
+        <div class="box">
+          <p class="title">Projects</p>
+          <hr>
+          <div class="columns">
+            {{> history/projects}}
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-header">
+            <p class="card-header-title">Education</p>
+          </div>
+          <div class="card-content content">
+            {{> history/education}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

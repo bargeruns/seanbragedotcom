@@ -27,7 +27,8 @@
                   <p class="subtitle">{{relation}}</p>
                 </div>
                 <div class="card-footer">
-                  <div class="card-footer-item">
+                  {{#if phone}}
+                    <div class="card-footer-item">
                     <a href="tel:{{phone}}">
                       <span class="icon">
                         <i class="fa fa-phone"></i>
@@ -36,6 +37,8 @@
                       {{phone}}
                     </a>
                   </div>
+                  {{/if}}
+                  {{#if email}}
                   <div class="card-footer-item">
                     <a href="mailto:{{email}}">
                       <span class="icon">
@@ -44,12 +47,14 @@
                       {{email}}
                     </a>
                   </div>
+                  {{/if}}
                 </div>
               </div>
             </div>
             {{/each}}
           </div>
         </div>
+        <hr>
         {{/each}}
       </div>
     </div>

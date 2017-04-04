@@ -1,0 +1,19 @@
+<p class="title">Tech Skills</p>
+<p class="subtitle">Frameworks, Libraries + More</p>
+<hr>
+<div class="columns content">
+  <div class="column">
+    <ul>
+      {{#each model.column_1 as |skill|}}
+      <li>{{skill}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+      {{#each model.column_2 as |skill|}}
+      <li>{{skill}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

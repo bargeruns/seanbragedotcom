@@ -1,0 +1,39 @@
+<div class="content">
+
+  <p class="title is-4">{{model.name}}</p>
+
+  {{#if model.title}}
+    <p class="subtitle">{{model.title}} - {{model.time}}</p>
+  {{else}}
+    <p class="subtitle">{{model.time}}</p>
+  {{/if}}
+
+  <ul>
+    <li>Summary:</li>
+    <ul>
+      <li>{{model.summary}}</li>
+    </ul>
+  
+    <li>Daily Work:</li>
+    <ul>
+      {{#each model.work as |work|}}
+        <li>{{work}}</li>
+      {{/each}}
+    </ul>
+  
+    {{#if model.accomplishments}}
+      <li>Noteworthy Accomplishments:</li>
+      <ul>
+        {{#each model.accomplishments as |a|}}
+          <li>{{a}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </ul>
+
+  <p class="title is-5">Reference(s):</p>
+  {{#each model.references as |r|}}
+    {{resume-reference model=r}} 
+  {{/each}}
+</div>
+<hr>

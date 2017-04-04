@@ -1,0 +1,7 @@
+<h2 class="title">{{title}}</h2>
+<hr>
+<div class="box">
+  {{#each model as |org|}}
+    {{history-entry model=org}}
+  {{/each}}
+</div>

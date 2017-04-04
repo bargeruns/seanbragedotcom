@@ -1,0 +1,17 @@
+<div class="column">
+  <div class="card">
+    <div class="card-content">
+      <p class="title is-5">{{model.name}}</p>
+      <p class="subtitle">{{model.relation}}</p>
+      <p>{{model.summary}}</p>
+    </div>
+    <div class="card-footer">
+      {{#if model.email}}
+        <div class="card-footer-item">
+          <a href="mailto:{{model.email}}">{{fa-icon "envelope"}} Contact</a>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>
+{{yield}}

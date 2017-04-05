@@ -15,4 +15,5 @@
 /libpeerconnection.log
 npm-debug.log*
 testem.log
-firebase.json .firebaserc
+firebase.json
+.firebaserc

@@ -9,7 +9,12 @@
       </div>
     {{/link-to}}
   </div>
-  <div class="nav-right">
+   <span class="nav-toggle {{if active "is-primary"}}" {{action "toggleMenu"}}>
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <div class="nav-right nav-menu {{if active "is-active"}}">
     {{#link-to resume class="nav-item"}}
       Resume
     {{/link-to}}

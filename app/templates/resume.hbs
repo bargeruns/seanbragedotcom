@@ -1,10 +1,12 @@
-<section class="section">
-  {{resume-bio}}
-</section>
-<section class="section">
-  {{resume-skills model=model.skills}}
-</section>
-<section class="section">
-  {{history-list title="Work History" model=model.work}}
-</section>
-{{outlet}}
+<div class="container">
+  <div class="tabs">
+    <ul>
+      <li class="is-active">{{#link-to "resume.culture"}}Culture & Bio{{/link-to}}</li>
+      <li>{{#link-to "resume.work"}}Work History{{/link-to}}</li>
+      <li>{{#link-to "resume.skills"}}Skills & Tech{{/link-to}}</li>
+    </ul>
+  </div>
+  <section class="section">
+    {{outlet model=model}}
+  </section>
+</div>

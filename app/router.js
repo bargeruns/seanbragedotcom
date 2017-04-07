@@ -7,7 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('resume', {path: '/resume'});
+  this.route('resume', {path: '/resume'}, function() {
+    this.route('culture');
+    this.route('work');
+    this.route('skills');
+  });
   this.route('demos');
 });
 

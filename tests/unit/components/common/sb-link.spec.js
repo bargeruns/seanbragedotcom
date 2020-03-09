@@ -32,7 +32,7 @@ describe("SBLink.vue", () => {
         RouterLink: RouterLinkStub
       }
     });
-    expect(wrapper.is("a")).toBe(true);
-    expect(wrapper.attributes("href")).toMatch(url);
+    const a = wrapper.find("a");
+    expect(a.attributes("href")).toMatch(url);
   });
 });

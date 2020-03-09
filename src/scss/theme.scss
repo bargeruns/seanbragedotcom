@@ -1,0 +1,9 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+// override Bulma theme
+$background: $white;
+$link: $red;
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$family-monospace: 'IBM Plex Mono', sans-serif;
+$family-primary: $family-sans-serif;

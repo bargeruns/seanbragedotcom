@@ -1,24 +1,19 @@
 <template>
-  <div id="home" class="container">
+  <div id="home">
     <HomeIntro></HomeIntro>
-    <ContentBlock bg="black" class="home__banner">
-      <div class="column">
-        <SBHeading size="2">Me as a developer</SBHeading>
-      </div>
-    </ContentBlock>
+    <HomeBio></HomeBio>
     <HomeValues></HomeValues>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ContentBlock from "@/components/common/ContentBlock.vue";
-import SBHeading from "@/components/common/SBHeading.vue";
 import HomeIntro from "@/components/home/HomeIntro.vue";
 import HomeValues from "@/components/home/HomeValues.vue";
+import HomeBio from "@/components/home/HomeBio.vue";
 export default {
   name: "Home",
-  components: { ContentBlock, SBHeading, HomeIntro, HomeValues }
+  components: { HomeIntro, HomeValues, HomeBio }
 };
 </script>
 

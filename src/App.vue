@@ -1,21 +1,19 @@
 <template>
-  <div id="app">
-    <app-header></app-header>
-    <div class="container" id="app-view">
-      <router-view />
-    </div>
+  <div id="app" v-cloak>
+    <TheApp />
   </div>
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader.vue";
+import TheApp from "@/components/TheApp.vue";
 export default {
   name: "App",
-  components: { AppHeader }
+  components: { TheApp }
 };
 </script>
-<style lang="scss" scoped>
-#app {
-  padding-top: 120px;
+
+<style>
+[v-cloak] > * {
+  display: none !important;
 }
 </style>

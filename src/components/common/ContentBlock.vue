@@ -29,6 +29,8 @@ export default {
 .content-block {
   /* width: 100%; */
   padding: 27px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: center; */

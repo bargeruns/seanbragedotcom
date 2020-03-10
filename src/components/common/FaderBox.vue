@@ -41,18 +41,18 @@ export default {
   &:hover &__title,
   &:hover &__icon {
     transform: translateY(-150%);
-    opacity: 0%;
+    opacity: 0;
     visibility: hidden;
   }
 
   &:hover &__detail {
     transform: translateY(0%);
-    opacity: 100%;
+    opacity: 1;
   }
 
   &__detail {
     transform: translateY(150%);
-    opacity: 0%;
+    opacity: 0;
     transition: all 0.2s ease-in;
     padding: 12px;
     position: absolute;

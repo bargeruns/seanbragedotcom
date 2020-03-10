@@ -13,9 +13,10 @@ export default {
   height: 107px;
   width: 100vw;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   background-color: $black;
-  animation: 0.5s ease-out 0s 1 slideInFromTop;
+  animation: 0.25s linear 0s 1 slideInFromTop;
 }
 </style>

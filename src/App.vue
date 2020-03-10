@@ -1,24 +1,18 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <ContentBlock>
-      <SBHeading size="1">I'm Sean Brage</SBHeading>
-      <p>
-        An experienced web developer / JavaScript engineer / dad / husband /
-        musician / gigantic dork living on the outskirts of Denver, CO.
-      </p>
-    </ContentBlock>
-    <router-view />
+    <div class="container" id="app-view">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import ContentBlock from "@/components/common/ContentBlock.vue";
-import SBHeading from "@/components/common/SBHeading.vue";
+
 export default {
   name: "App",
-  components: { AppHeader, SBHeading, ContentBlock }
+  components: { AppHeader }
 };
 </script>
 <style lang="scss">
@@ -30,5 +24,9 @@ body {
 
 #app {
   padding-top: 120px;
+}
+
+#app-view {
+  animation: 0.5s ease-in 0s fadeIn;
 }
 </style>

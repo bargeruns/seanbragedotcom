@@ -1,17 +1,37 @@
 <template>
-  <div class="content-block">
+  <div
+    class="content-block columns is-centered is-multiline"
+    :class="bgColorClass"
+  >
     <slot></slot>
   </div>
 </template>
 
+<script>
+export default {
+  name: "ContentBlock",
+  props: {
+    bg: {
+      type: String,
+      required: false,
+      default: "white"
+    }
+  },
+  computed: {
+    bgColorClass() {
+      return `bg--${this.bg}`;
+    }
+  }
+};
+</script>
+
 <style>
 .content-block {
-  width: 100%;
+  /* width: 100%; */
   padding: 27px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: 1.25s ease-in 0s 1 fadeIn;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 </style>

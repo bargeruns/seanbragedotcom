@@ -1,5 +1,5 @@
 # seanmbragedotcom
-
+My personal portfolio and resume site.
 ## Project setup
 ```
 npm install

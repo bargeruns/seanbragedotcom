@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home-values {
   border-bottom: 2px solid $black;
   animation: 2.75s linear 0s fadeIn;

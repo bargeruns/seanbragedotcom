@@ -15,12 +15,8 @@ export default {
   components: { AppHeader }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./scss/main.scss";
-html,
-body {
-  padding: 0px;
-}
 
 #app {
   padding-top: 120px;

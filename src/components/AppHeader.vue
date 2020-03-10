@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .app-header {
   height: 107px;
   width: 100vw;

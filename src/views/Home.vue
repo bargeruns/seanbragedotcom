@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home__banner {
   animation: 1.75s linear 0s fadeIn;
 }

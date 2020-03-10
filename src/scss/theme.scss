@@ -8,6 +8,11 @@ $family-sans-serif: 'Source Sans Pro', sans-serif;
 $family-monospace: 'IBM Plex Mono', sans-serif;
 $family-primary: $family-sans-serif;
 
+html,
+body {
+  padding: 0px;
+}
+
 h1,h2,h3,h4,h5,h6,.title,.subtitle {
     font-family: $family-monospace;
     text-transform: uppercase;
@@ -20,3 +25,5 @@ p, a, span {
     font-family: $family-sans-serif;
     font-weight: 400;
 }
+
+@import '../../node_modules/bulma/bulma.sass';

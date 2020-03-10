@@ -22,6 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 .home__intro {
-  animation: 0.75s linear 0s fadeIn;
+  animation: fadeIn 0.75s linear 0s;
 }
 </style>

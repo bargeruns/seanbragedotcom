@@ -1,5 +1,29 @@
-@import '_animations.scss';
 @import '_variables.scss';
 @import '_colors.scss';
 @import 'theme.scss';
+
+@keyframes slideInFromTop {
+    0% {
+	transform: translateY(-200%);
+    }
+    100% {
+	transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+	opacity: 0;
+    }
+
+    66% {
+	opacity: 0;
+    }
+    
+    100% {
+	opacity: 1;
+    }
+}
+
+@import '../../node_modules/bulma/bulma.sass';
 

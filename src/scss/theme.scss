@@ -1,7 +1,6 @@
-@import 'colors';
+@import '_colors';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-// override Bulma theme
 $background: $white;
 $link: $red;
 $family-sans-serif: 'Source Sans Pro', sans-serif;
@@ -26,4 +25,3 @@ p, a, span {
     font-weight: 400;
 }
 
-@import '../../node_modules/bulma/bulma.sass';

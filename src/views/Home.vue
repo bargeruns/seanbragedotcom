@@ -1,7 +1,8 @@
 <template>
   <div id="home">
     <HomeIntro></HomeIntro>
-    <HomeBio></HomeBio>
+    <HomeBlurb></HomeBlurb>
+    <HomeBanner></HomeBanner>
     <HomeValues></HomeValues>
   </div>
 </template>
@@ -10,15 +11,12 @@
 // @ is an alias to /src
 import HomeIntro from "@/components/home/HomeIntro.vue";
 import HomeValues from "@/components/home/HomeValues.vue";
-import HomeBio from "@/components/home/HomeBio.vue";
+import HomeBlurb from "@/components/home/HomeBlurb.vue";
+import HomeBanner from "@/components/home/HomeBanner.vue";
 export default {
   name: "Home",
-  components: { HomeIntro, HomeValues, HomeBio }
+  components: { HomeIntro, HomeValues, HomeBanner, HomeBlurb }
 };
 </script>
 
-<style lang="scss" scoped>
-.home__banner {
-  animation: 1.75s linear 0s fadeIn;
-}
-</style>
+<style lang="scss" scoped></style>

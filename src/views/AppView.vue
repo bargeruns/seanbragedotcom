@@ -14,12 +14,4 @@ export default {
   components: { AppHeader }
 };
 </script>
-<style lang="scss" scoped>
-#the-app {
-  padding-top: 120px;
-}
-
-[v-cloak] .v-cloak--hidden {
-  display: none !important;
-}
-</style>
+<style lang="scss" scoped></style>

@@ -1,11 +1,12 @@
 <template>
-  <div class="home__bio">
-    <ContentBlock bg="black" class="home__banner">
-      <div class="column">
-        <SBHeading size="2">What I'm about'</SBHeading>
-      </div>
-    </ContentBlock>
-  </div>
+  <ContentBlock bg="black" class="home__banner">
+    <div class="column">
+      <SBHeading :size="2" color="white">What I'm about</SBHeading>
+      <SBHeading :size="5" color="red"
+        >click, tap, and touch at your leisure</SBHeading
+      >
+    </div>
+  </ContentBlock>
 </template>
 
 <script>
@@ -18,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-.home__bio {
+.home__banner {
   animation: fadeIn 1.75s linear 0s;
 }
 </style>

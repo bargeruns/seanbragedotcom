@@ -71,6 +71,6 @@ export default {
 
 <style lang="scss" scoped>
 .home-values {
-  animation: 2.75s linear 0s fadeIn;
+  animation: 2.25s linear 0s fadeIn;
 }
 </style>

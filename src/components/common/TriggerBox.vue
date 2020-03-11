@@ -17,7 +17,7 @@
         <slot name="icon"></slot>
       </div>
       <div class="trigger-box__title">
-        <SBHeading :size="2">
+        <SBHeading :size="3">
           <slot name="title"></slot>
         </SBHeading>
       </div>

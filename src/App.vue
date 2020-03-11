@@ -1,18 +1,19 @@
 <template>
   <div id="app" v-cloak>
-    <TheApp />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import TheApp from "@/components/TheApp.vue";
 export default {
-  name: "App",
-  components: { TheApp }
+  name: "App"
 };
 </script>
 
 <style>
+#app {
+  padding-top: 120px;
+}
 [v-cloak] > * {
   display: none !important;
 }

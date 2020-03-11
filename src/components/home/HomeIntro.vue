@@ -3,7 +3,7 @@
     <div class="column">
       <SBHeading size="1">I'm Sean Brage</SBHeading>
       <SBHeading size="5">
-        An experienced web developer / JavaScript engineer / husband / dad /
+        Experienced web developer / JavaScript engineer / husband / dad /
         musician / gigantic dork living on the outskirts of Denver, CO.
       </SBHeading>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div
     class="content-block columns is-centered is-multiline"
-    :class="bgColorClass"
+    :class="[bgColorClass]"
   >
     <slot></slot>
   </div>
@@ -27,13 +27,8 @@ export default {
 
 <style scoped>
 .content-block {
-  /* width: 100%; */
-  padding: 27px;
+  padding: 15px 27px;
   margin-top: 18px;
   margin-bottom: 18px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 </style>

@@ -1,0 +1,34 @@
+@import '_variables';
+@import '_colors';
+
+@mixin is-color($color) {
+    color: $color;
+}
+
+.bg {
+    &--red {
+	background-color: $red;
+    }
+
+    &--white {
+	background-color: $white;
+    }
+
+    &--black {
+	background-color: $black;
+    }
+}
+
+.text {
+    &--red {
+	color: $red;
+    }
+
+    &--white {
+	color: $white;
+    }
+
+    &--black {
+	color: $black;
+    }
+}

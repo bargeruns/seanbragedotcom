@@ -1,26 +1,34 @@
 <template>
-  <ContentBlock class="home-values">
-    <TriggerBox
-      v-for="value in values"
-      :key="value.title"
-      :selected="selectedValue === value.name"
-    >
-      <template v-slot:icon>
-        <font-awesome-icon :icon="value.icon"></font-awesome-icon>
-      </template>
-      <template v-slot:title>
-        {{ value.name }}
-      </template>
-    </TriggerBox>
-  </ContentBlock>
+  <div class="home-values column is-full">
+    <div class="columns">
+      <div class="column is-half">
+        <TriggerBox
+          v-for="value in values"
+          :key="value.name"
+          :selected="selectedValue === value.name"
+          :name="value.name"
+          @selected="setSelectedValue"
+        >
+          <template v-slot:icon>
+            <font-awesome-icon :icon="value.icon"></font-awesome-icon>
+          </template>
+          <template v-slot:title>
+            {{ value.name }}
+          </template>
+        </TriggerBox>
+      </div>
+      <HomeValue :selected="selectedValue" class="column is-half" />
+    </div>
+  </div>
 </template>
 
 <script>
-import TriggerBox from "@/components/common/TriggerBox.vue";
-import ContentBlock from "@/components/common/ContentBlock.vue";
+import HomeValue from "@/components/home/HomeValue.vue";
+import common from "@/components/common/";
+const { TriggerBox } = common;
 export default {
   name: "HomeValues",
-  components: { TriggerBox, ContentBlock },
+  components: { TriggerBox, HomeValue },
   data() {
     return {
       selectedValue: "thoughtfulness",
@@ -48,8 +56,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .home-values {
   animation: 2.25s linear 0s fadeIn;
+  padding-left: 0px !important;
 }
 </style>

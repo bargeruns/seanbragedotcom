@@ -1,6 +1,6 @@
 <template>
   <div
-    class="column trigger-box__container"
+    class="column trigger-box__container text--white"
     :class="{
       'trigger-box__container--hovered': isHovered,
       'trigger-box__container--selected': selected,
@@ -62,18 +62,10 @@ export default {
     },
     showAsNotHovered() {
       this.isHovered = false;
-      const currentlySelectedElement = document.getElementsByClassName(
-        "trigger-box__container--selected"
-      );
-      if (currentlySelectedElement.length) {
-        currentlySelectedElement[0].classList.remove(
-          "trigger-box__container--no-indicator"
-        );
-      }
     },
     setSelected() {
       this.$emit("selected", this.name);
-      this.$set(this, "isActive", true);
+      this.$set(this, "isHovered", true);
     }
   }
 };
@@ -84,8 +76,6 @@ export default {
   margin: 0;
   width: auto;
   height: 150px;
-  border: 2px solid $black;
-  padding: 8px;
   border-radius: 11px;
   display: flex;
   flex-direction: column;
@@ -114,15 +104,10 @@ export default {
     transition: width 0.25s $slide-in, background-color 0.25s ease;
   }
 
-  &--hovered:after,
   &--selected:after {
     width: 100%;
     background-color: $red;
     border-radius-left: 4px;
-  }
-
-  &--no-indicator:after {
-    width: 0px;
   }
 }
 </style>

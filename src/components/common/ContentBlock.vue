@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="content-block columns is-centered is-multiline"
-    :class="[bgColorClass]"
-  >
+  <div class="content-block columns" :class="[bgColorClass]">
     <slot></slot>
   </div>
 </template>
@@ -25,10 +22,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 .content-block {
   padding: 15px 27px;
   margin-top: 18px;
   margin-bottom: 18px;
+
+  & + .content-block {
+    margin-bottom: 0px;
+  }
 }
 </style>

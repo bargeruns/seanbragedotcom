@@ -4,7 +4,7 @@
       <SBHeading :size="2">
         <font-awesome-icon :icon="['fas', 'compass']"></font-awesome-icon>
       </SBHeading>
-      <p>
+      <p class="is-size-4">
         From production single-page-apps for a major phone service provider, to
         progressive VueJS enhancements in legacy Jinja templates; I've been
         everywhere, man. After a long career as an IT network consultant, I went

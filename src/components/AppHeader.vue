@@ -16,9 +16,10 @@ export default {
 
 <style lang="scss" scoped>
 .app-header {
+  margin: 0 auto;
   padding: 15px 27px;
   height: 107px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 999;
   top: 0;

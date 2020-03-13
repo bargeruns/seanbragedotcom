@@ -36,11 +36,7 @@ export default {
   methods: {
     ...mapMutations(["setSelectedCoreValue"]),
     setCoreValue(value) {
-      console.log(value);
       return this.setSelectedCoreValue(value);
-    },
-    foo() {
-      console.log("bar");
     }
   }
 };

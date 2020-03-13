@@ -3,18 +3,22 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import("./scss/main.scss");
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faHatWizard,
   faWrench,
-  faPaintBrush
+  faPaintBrush,
+  faCompass
 } from "@fortawesome/free-solid-svg-icons";
 
 Object.values({
   faHatWizard,
   faWrench,
-  faPaintBrush
+  faPaintBrush,
+  faCompass
 }).forEach(icon => library.add(icon));
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

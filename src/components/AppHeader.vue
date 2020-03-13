@@ -1,16 +1,19 @@
 <template>
-  <header class="app-header columns">
-    <SBHeading :size="1" color="white" class="app-header__title"
-      >{SB}</SBHeading
-    >
+  <header class="app-header">
+    <FadeIn>
+      <AppHeading :size="1" color="white" class="app-header__title"
+        >{SB}</AppHeading
+      >
+    </FadeIn>
   </header>
 </template>
 
 <script>
-import SBHeading from "@/components/common/SBHeading.vue";
+import AppHeading from "@/components/common/AppHeading.vue";
+import FadeIn from "@/components/common/FadeIn.vue";
 export default {
   name: "AppHeader",
-  components: { SBHeading }
+  components: { AppHeading, FadeIn }
 };
 </script>
 
@@ -27,8 +30,8 @@ export default {
   background-color: $black;
   animation: 0.25s linear 0s 1 slideInFromTop;
 
-  &.title {
-    animation: 0.25s linear 0.5s 1 fadeIn;
+  &__title {
+    animation: 1s linear 0s 1 fadeIn;
   }
 }
 </style>

@@ -1,20 +1,30 @@
 <template>
-  <div id="app" v-cloak>
+  <div id="app">
+    <AppHeader></AppHeader>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import AppHeader from "@/components/AppHeader.vue";
+
 export default {
-  name: "App"
+  name: "App",
+  components: { AppHeader }
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./scss/main.scss";
 #app {
-  padding-top: 120px;
+  padding-top: 107px;
+  height: 100%;
 }
 [v-cloak] > * {
   display: none !important;
+}
+
+.app-column {
+  width: 100px;
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
   <ContentBlock>
-    <SBHeading :size="1">
+    <AppHeading :size="1">
       I made these things.
-    </SBHeading>
+    </AppHeading>
   </ContentBlock>
 </template>
 
 <script>
-import ContentBlock from "@/components/common/ContentBlock.vue";
-import SBHeading from "@/components/common/SBHeading.vue";
+import ContentBlock from "@/components/layout/ContentBlock.vue";
+import AppHeading from "@/components/common/AppHeading.vue";
 export default {
   name: "Portfolio",
-  components: { ContentBlock, SBHeading }
+  components: { ContentBlock, AppHeading }
 };
 </script>

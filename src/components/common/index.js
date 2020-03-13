@@ -1,7 +1,7 @@
 import ContentBlock from "./ContentBlock.vue";
-import SBHeading from "./SBHeading.vue";
-import SBLink from "./SBLink.vue";
-import TriggerBox from "./TriggerBox.vue";
+import AppHeading from "./AppHeading.vue";
+import AppLink from "./AppLink.vue";
+import HoverBox from "./HoverBox.vue";
 
 export default {
   ContentBlock,

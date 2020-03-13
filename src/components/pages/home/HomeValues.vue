@@ -31,7 +31,7 @@ export default {
   components: { TriggerBox, HomeValue },
   data() {
     return {
-      selectedValue: "thoughtfulness",
+      selectedValue: "",
       values: [
         {
           icon: ["fas", "hat-wizard"],
@@ -51,6 +51,9 @@ export default {
   methods: {
     setSelectedValue(name) {
       this.selectedValue = name;
+      document
+        .getElementById("home-value-display")
+        .scrollIntoView({ behavior: "smooth" });
     }
   }
 };

@@ -1,10 +1,10 @@
 <template>
-  <ContentBlock class="home_blurb">
-    <div class="column">
-      <SBHeading :size="2">
+  <ContentBlock class="bio_text">
+    <ContentColumn>
+      <AppHeading :size="2">
         <font-awesome-icon :icon="['fas', 'compass']"></font-awesome-icon>
-      </SBHeading>
-      <p class="is-size-4">
+      </AppHeading>
+      <p class="is-size-4 bio_text__paragraph">
         From production single-page-apps for a major phone service provider, to
         progressive VueJS enhancements in legacy Jinja templates; I've been
         everywhere, man. After a long career as an IT network consultant, I went
@@ -14,22 +14,22 @@
         GraphQL server for fun and profit. Above all, I like solving problems
         and building cool $*!%.
       </p>
-    </div>
+    </ContentColumn>
   </ContentBlock>
 </template>
 
 <script>
-import SBHeading from "@/components/common/SBHeading.vue";
-import ContentBlock from "@/components/common/ContentBlock.vue";
+import AppHeading from "@/components/common/AppHeading.vue";
+import ContentBlock from "@/components/layout/ContentBlock.vue";
+import ContentColumn from "@/components/layout/ContentColumn.vue";
 export default {
-  name: "HomeBlurb",
-  components: { SBHeading, ContentBlock }
+  name: "BioText",
+  components: { AppHeading, ContentBlock, ContentColumn }
 };
 </script>
 
 <style lang="scss">
-.home_blurb {
+.bio_text {
   border-top: 2px solid $black;
-  animation: 1.25s linear 0s fadeIn;
 }
 </style>

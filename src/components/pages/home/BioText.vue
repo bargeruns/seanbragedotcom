@@ -30,6 +30,5 @@ export default {
 
 <style lang="scss">
 .bio_text {
-  border-top: 2px solid $black;
 }
 </style>

@@ -2,6 +2,7 @@
   <div id="home">
     <PageView>
       <IntroHeader class="appear appear--first"></IntroHeader>
+
       <BioText class="appear appear--second"></BioText>
       <CoreValuesBanner class="appear appear--third"></CoreValuesBanner>
       <CoreValues class="appear appear--fourth"></CoreValues>
@@ -32,15 +33,22 @@ export default {
 </script>
 
 <style lang="scss">
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: $black;
+  grid-column: span 4;
+}
+
 .appear {
   &--first {
     @include fade-in-with-duration(1.5s);
-    grid-column: span 4;
+    grid-column: span 2;
   }
 
   &--second {
     @include fade-in-with-duration(2s);
-    grid-column: span 4;
+    grid-column: span 2;
   }
 
   &--third {
